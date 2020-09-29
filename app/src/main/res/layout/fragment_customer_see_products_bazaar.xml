@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:alpha="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_1_web"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    ///for Data
+
+    <LinearLayout
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                //left side 0.6
+                <View
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <ListView
+                        android:divider="@drawable/transparent_background"
+                        android:dividerHeight="3dp"
+                        android:fadeScrollbars="false"
+                        android:id="@+id/list_member_inventory_products"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7.7"
+                        />
+                </LinearLayout>
+
+                //right side 0.6
+                <View
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <net.colindodd.toggleimagebutton.ToggleImageButton
+                    xmlns:tib="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/current_location_toggle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:background="#fff"
+                    tib:layout_constraintRight_toRightOf="parent"
+                    tib:layout_constraintBottom_toBottomOf="parent"
+                    tib:tib_drawable_on="@drawable/current_location_enable"
+                    tib:tib_drawable_off="@drawable/current_location_disable"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

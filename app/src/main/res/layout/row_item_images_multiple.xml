@@ -1,0 +1,17 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/question_answer_back"
+    >
+
+    //linear lay out for pic question and answer
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
+</LinearLayout>

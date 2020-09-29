@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/popup_logout"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_background_popup_logout"
+    android:padding="3dp"
+    >
+    <View
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </View>
+    //cross btton
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+        <ImageView
+            android:layout_weight="2"
+            android:src="@drawable/cross_2"
+            android:id="@+id/close_btn_popup_logout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:background="@drawable/left_gray_title_background"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+        <TextView
+            android:id="@+id/popup_heading"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="لاگ آوٹ"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </TextView>
+        <View
+            android:background="@drawable/right_gray_title_background"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <TextView
+            android:id="@+id/popup_subheading"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="کیا آپ لوگ آوٹ کرنا چاہتے ہیں"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+        </TextView>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <Button
+            android:id="@+id/btn_popup_logout_yes"
+            android:textColor="@color/white"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="ہاں"
+            android:background="@drawable/buttonshape_add_recording"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </Button>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <Button
+            android:id="@+id/btn_popup_logout_no"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold"
+            android:text="نہیں"
+            android:background="@drawable/buttonshape_red_no"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </Button>
+
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></View>
+
+</LinearLayout>

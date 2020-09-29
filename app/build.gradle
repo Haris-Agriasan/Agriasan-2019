@@ -1,0 +1,181 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "agri_asan.com.agriasan06_12_19"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 25
+        versionName "1.0.23"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+//android {
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+//}
+//for firebase
+apply plugin: 'com.android.application'
+//firebase end
+dependencies {
+    //////FOR BOTH NAVIGATION
+    implementation 'com.ncapdevi:frag-nav:1.0.3'
+    implementation 'com.roughike:bottom-bar:1.3.9'
+    implementation('com.mikepenz:materialdrawer:5.3.1@aar') {
+        transitive = true
+    }
+    /////FOR BOTH NAVIGATION END
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    //My stuff
+
+    implementation('com.alimuzaffar.lib:pinentryedittext:2.0.6') {
+        // Exclude is only needed if you already have
+        // androidx.appcompat as a dependency in your app.
+        exclude group: 'androidx.appcompat', module: 'appcompat'
+    }
+
+    //for firebase
+//    implementation 'com.google.firebase:firebase-admin:6.10.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    //implementation 'com.google.gms:google-services:4.3.3'
+    //implementation 'com.google.firebase:firebase-database:19.2.0'
+    //implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    //implementation 'com.google.firebase:firebase-messaging:20.0.1'
+    //implementation 'com.google.firebase:firebase-storage:19.1.0'
+    //implementation 'com.google.firebase:firebase-inappmessaging:19.0.2'
+    //mplementation 'com.google.firebase:firebase-inappmessaging-display:19.0.2'
+    implementation 'com.firebase:firebase-client-android:2.5.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+    //implementation 'com.google.firebase:firebase-auth:16.0.5'
+
+    //firebase end
+
+    //for side menu
+    implementation 'com.android.support:design:29.0.0'
+
+
+    //for radio button selector
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    //for image gallery  Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    //glide image
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+
+    ///toolbar
+    implementation "com.mikepenz:materialdrawer:6.1.2"
+
+//required support lib modules
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.annotation:annotation:1.1.0"
+
+// Add for NavController support
+    implementation "com.mikepenz:materialdrawer-nav:7.0.0"
+
+    ////IMAGE GALLERY AND CAMERA MULTIPLE
+    implementation 'com.github.ParkSangGwon:TedPicker:v1.0.10'
+    ////IMAGE GALLERY AND CAMERA MULTIPLE END
+
+    /////FOR CIRLCE IMAGE
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    ////FOR CIRCLE IMAGE END
+
+    //////FOR CIRCLE IAMGE 3
+    implementation 'com.github.abdularis:circularimageview:1.4'
+    ////FOR CIRCLE IAMGE 3 END
+
+    ////PROGRESS BAR
+    implementation 'com.wang.avi:library:2.1.3'
+    ////PROGRESS BAR END
+
+
+    ////ROUNDED CORNWER IMAGE VIEW
+    implementation 'com.github.zjywill:roundedcornerimageview:1.1.0'
+    ////ROUNDED CORNER IMAGE VIEW END
+
+    /////tOGGLE IMAGE
+    implementation 'net.colindodd:toggleimagebutton:1.2'
+    /////TOGGLE IMAGE
+
+
+    ////SPLASH SCREEN
+    implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    ////SPLASH SCREEN END
+
+    ////CAMERA CAPTURE FOR BOTH CAMERA
+    api 'com.otaliastudios:cameraview:2.6.1'
+    ///CAMERA CAPTURE FOR BOTH CAMERA END
+
+    ///////LANAGUAGE SELECTOR GITHUB
+    implementation 'com.akexorcist:localization:1.2.4'
+    ///////LANGIUAGE SELECTOR GITHUB END
+
+    /////Ted image gallery and cmaera multiple
+    implementation 'gun0912.ted:tedbottompicker:2.0.0-alpha1'
+    ////Ted image gallery and camera multiple 3/2/20
+
+
+    ////FOR CHECKING INTERNET CONNECTION
+    implementation 'com.treebo:internetavailabilitychecker:1.0.4'
+    /////FOR CHECKING INTERNET CONNETION END
+
+    ////VOLLEY FOR UPLOADING IMAGE TO CPANEL
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.karumi:dexter:5.0.0'   ///FOR MULTIPLE PERMISSION LISTENER
+    ////VOLLEY FOR UPLOADING IMAGE TO CPANEL end
+
+    ///ION Library for images loadiNG
+    implementation 'com.koushikdutta.ion:ion:3.0.8'
+    ///ION Library for images loadiNG END
+
+
+
+    /////LIBRARY FOR TEXT SIZE ACCORDING TO SCREEN
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+    /////LIBRARY FOR TEXT SIZE ACCORDING TO SCREEN END
+
+
+    implementation 'com.google.android.play:core:1.6.5'
+
+    ////Number Picker For QUANTITY
+    implementation 'com.shawnlin:number-picker:2.4.9'
+    ////Number Picker For QUANTITY END
+
+}
+
+//for firebase
+apply plugin: 'com.google.gms.google-services'
+
+//firebase end
+

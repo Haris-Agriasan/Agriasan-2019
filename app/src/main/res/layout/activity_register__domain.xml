@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:background="@drawable/background_1_1"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:id="@+id/layout_register_domain"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+
+    <LinearLayout
+        android:id="@+id/id_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="10"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+        <ImageView
+            android:src="@drawable/only_name_logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+    </View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        ></View>
+
+    <!--    Text after welcome-->
+    <LinearLayout
+        android:id="@+id/id_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+        <TextView
+            android:autoSizeTextType="uniform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.6"
+            android:text="@string/agricultrual_expert"
+            android:gravity="center_horizontal|bottom"
+            android:textStyle=""
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+        <TextView
+            android:autoSizeTextType="uniform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.6"
+            android:text="@string/yaha_register_karen"
+            android:gravity="center_horizontal|top"
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+    </LinearLayout>
+
+    <!--    text after welcome end-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        ></View>
+
+    <!--    EDIT TEXT FOR DOMAIN EXPERT NAME-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <!--        Right side text Phone Number-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+            <View
+                android:clickable="false"
+                android:text=""
+                android:textColor="#83464444"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextshape"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+                </View>
+
+                <EditText
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/edittext__domain_name"
+                    android:hint="@string/your_name"
+                    android:maxLength="20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.6"
+                    android:textColor="#F2666866"
+                    android:textAlignment="viewEnd"
+                    android:inputType="text|textNoSuggestions"
+                    android:background="@android:color/transparent"
+                    >
+                </EditText>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+                </View>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="#3BAE49"
+                    android:gravity="center_vertical"
+                    android:text="@string/name"
+                    >
+                </TextView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3">
+                </View>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+
+    <!--    EDIT TEXT FOR DOMAIN EXPERT CITY-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <!--        Right side text Phone Number-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+            <View
+                android:clickable="false"
+                android:text=""
+                android:textColor="#83464444"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextshape"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                </View>
+
+                <EditText
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/edittext_domain_city"
+                    android:hint="@string/your_city"
+                    android:maxLength="20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.3"
+                    android:textColor="#F2666866"
+                    android:textAlignment="viewEnd"
+                    android:inputType="text|textAutoComplete"
+                    android:background="@android:color/transparent"
+                    >
+
+                </EditText>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+                </View>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.4"
+                    android:textColor="#3BAE49"
+                    android:gravity="center_vertical"
+                    android:text="@string/city"
+                    >
+                </TextView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+                </View>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+    <!--    EDIT TEXT FOR DOMAIN EXPERT Phone Number-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <!--        Right side text Phone Number-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+            <View
+                android:clickable="false"
+                android:text=""
+                android:textColor="#83464444"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextshape"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+                </View>
+
+                <EditText
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:longClickable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/edittext_domain_number"
+                    android:hint="@string/phn_hint"
+                    android:maxLength="12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:textColor="#F2666866"
+                    android:textAlignment="viewEnd"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    >
+
+                </EditText>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textColor="#3BAE49"
+                    android:gravity="center_vertical"
+                    android:text="@string/phone_no"
+                    >
+                </TextView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8">
+                </View>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+    <!--    EDIT TEXT FOR DOMAIN EXPERT EMAIL-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <!--        Right side text Phone Number-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+            <View
+                android:clickable="false"
+                android:text=""
+                android:textColor="#83464444"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextshape"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+                </View>
+
+                <EditText
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:longClickable="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/edittext_domain_id_card"
+                    android:hint="XXXXX-XXXXXXX-X"
+                    android:maxLength="15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:textColor="#F2666866"
+                    android:textAlignment="viewEnd"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    >
+                </EditText>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+                </View>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textColor="#3BAE49"
+                    android:gravity="center_vertical"
+                    android:text="@string/id_card"
+                    >
+                </TextView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </View>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+
+    <!--    EDIT TEXT FOR DOMAIN EXPERT SHOBA-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <!--        Right side text Phone Number-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+            <View
+                android:clickable="false"
+                android:text=""
+                android:textColor="#83464444"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextshape"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+                </View>
+                <EditText
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:id="@+id/edittext_domain_shoba"
+                    android:hint="@string/shoba_hint"
+                    android:maxLength="25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textColor="#F2666866"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"
+                    >
+                </EditText>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2">
+                </View>
+                <TextView
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:textColor="#3BAE49"
+                    android:gravity="center_vertical"
+                    android:text="@string/shoba"
+                    >
+                </TextView>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+                </View>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+    <!--    Submit button / Register Button button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5">
+                </View>
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_weight="3"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/darj_karen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+                <ImageView
+                    android:clickable="false"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/enter"
+                    ></ImageView>
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </View>
+            </LinearLayout>
+
+            <Button
+                android:clickable="false"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/for_white_stroke"
+
+                />
+
+            <Button
+                android:id="@+id/register_domain_submit_button"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="3dp"
+                android:autoSizeStepGranularity="10sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/buttonshape_submit"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

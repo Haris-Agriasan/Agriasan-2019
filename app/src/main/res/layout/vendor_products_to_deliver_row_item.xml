@@ -1,0 +1,713 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main_parent"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="3dp"
+    android:background="@drawable/question_answer_back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.6"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+                <TextView
+                    android:textSize="@dimen/_14ssp"
+                    android:text="product name"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#3BAE49"
+                    android:id="@+id/textview_name_of_product"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    >
+
+                </TextView>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:background="#8D8C8C"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            //name and lahore of person asking question
+            <TextView
+                android:text="product Price"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/textview_product_price"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+            </TextView>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#8D8C8C">
+                </View>
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                //time
+                <TextView
+                    android:gravity="center"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textview_quantity"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="0.02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <View
+                        android:background="#8D8C8C"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </View>
+
+                    <View
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                    </View>
+
+                </LinearLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textview_total_price"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_image_of_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/corn"
+                app:civ_border_color="#FF000000"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/layout_call_vendor"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+        <TextView
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/textview_vendor_contact"
+            android:text="03XX-XXXXXXXXXX"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+        <TextView
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="@string/contact_no"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <TextView
+            android:id="@+id/textview_order_date"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0.04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <View
+                android:background="#8D8C8C"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </View>
+
+            <View
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/textview_order_time"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <TextView
+        android:textColor="#3BAE49"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/receiver_info"
+        android:layout_weight="2.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/layout_call_customer"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <View
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/textview_receiver_name"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="0.02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <View
+                android:background="#8D8C8C"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </View>
+
+            <View
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_13ssp"
+            android:id="@+id/textview_receiver_phn"
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <View
+            android:layout_weight="0.05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+        <ImageView
+            android:background="@drawable/buttonshape_submit"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone_call"
+            android:layout_weight="0.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <View
+            android:layout_weight="0.05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <TextView
+        android:scrollbars="vertical"
+        android:id="@+id/textview_receiver_address"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_weight="2.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <TextView
+        android:textColor="#3BAE49"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/order_status"
+        android:layout_weight="2.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </TextView>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:background="#8D8C8C"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </View>
+
+        <View
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <Spinner
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="@dimen/_14ssp"
+        android:layout_weight="2"
+        android:id="@+id/spinner_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:prompt="@string/order_status_prompt" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F3F3"
+    >
+
+    <View
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+        <ImageView
+            android:layout_weight="2"
+            android:src="@drawable/cross_1"
+            android:id="@+id/close_btn_popup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="9"
+        android:id="@+id/image_popup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        />
+
+</LinearLayout>

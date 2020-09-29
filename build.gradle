@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+
+        //For firebase
+        classpath 'com.google.gms:google-services:4.3.2'
+        //firebase end
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+
+    }
+
+
+
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        ////IMAGE GALLERY AND CAMERA MULTIPLE
+        maven { url "https://s3.amazonaws.com/repo.commonsware.com" }
+        maven { url "https://jitpack.io" }
+        ////IMAGE GALLERY AND CAMERA MULTIPLE END
+
+        /////circle image 3
+        maven {
+            url 'https://jitpack.io'
+        }
+        ///CIRCLE IAMGE 3   end
+
+        ///AwesomeSplash FOR SPLASG SCREEN
+        maven { url "https://jitpack.io" }
+        ///AwesomeSplash FOR SPLASG SCREEN end
+
+
+
+//        rounder corner image
+        mavenCentral()
+
+        ///ROUNDED CORNER IMAGE VIEW END
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+

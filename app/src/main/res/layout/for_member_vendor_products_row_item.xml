@@ -1,0 +1,474 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/question_answer_back"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+                <TextView
+                    android:text="product name"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#3BAE49"
+                    android:id="@+id/textview_name_of_product"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    >
+
+                </TextView>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:background="#8D8C8C"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            //name and lahore of person asking question
+            <TextView
+                android:text="product Price"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/textview_product_price"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+            </TextView>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#8D8C8C"></View>
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                //time
+                <TextView
+                    android:text="About Verification"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textview_verification"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+                <TextView
+                    android:text="time"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textview_time_date_product"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <View
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+                <ImageView
+                    android:src="@drawable/views"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+                <TextView
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/seen"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <View
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+                <TextView
+                    android:id="@+id/textview_product_seen"
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <View
+                    android:layout_weight="0.8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+                <ImageView
+                    android:src="@drawable/shopping_bag"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+                <TextView
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/sold"
+                    android:layout_weight="0.7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+                <View
+                    android:layout_weight="0.1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+                <TextView
+                    android:id="@+id/textview_product_total_orders"
+                    android:textColor="#000"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:autoSizeTextType="uniform"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/loading_4"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_image_of_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:civ_border_color="#FF000000"/>
+        </LinearLayout>
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/main_image_of_product"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:adjustViewBounds="true"-->
+<!--            android:src="@drawable/corn"-->
+<!--            android:layout_weight="2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@drawable/question_answer_image_back"-->
+<!--            >-->
+
+<!--        </ImageView>-->
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight="0.25"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+
+    //just fot button
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+        </View>
+        //layout for button and icon
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5">
+                </View>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/delete_product"
+                android:text="ڈیلیٹ"
+                android:autoSizeMaxTextSize="26dp"
+                android:autoSizeStepGranularity="10sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonshape_delete"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+        </View>
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5">
+                </View>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/view_tafseel_product"
+                android:text="تفصیل"
+                android:autoSizeMaxTextSize="26dp"
+                android:autoSizeStepGranularity="10sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonshape_submit"
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+        </View>
+        //layout for button and icon
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5">
+                </View>
+                /////yaha wo imahe hoti button ki
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/edit_product_details"
+                android:text="تبدیل"
+                android:autoSizeMaxTextSize="26dp"
+                android:autoSizeStepGranularity="10sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonshape_tabdeel"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1">
+        </View>
+    </LinearLayout>
+</LinearLayout>

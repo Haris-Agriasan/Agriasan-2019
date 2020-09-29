@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:alpha="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_1_web"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    ///for Data
+
+    <LinearLayout
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                //left side 0.6
+                <View
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="8.6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    //0.1
+
+                    //selected Fasal  0.6
+                    <LinearLayout
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:background="@drawable/selected_fasal_type_background"
+                        android:id="@+id/layout_choose_fasal"
+                        >
+
+                        //pencil editing icon
+                        <ImageView
+                            android:id="@+id/btn_fasal_select_page"
+                            android:background="@drawable/pencil_icon_background"
+                            android:src="@drawable/pencil"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="match_parent">
+                        </ImageView>
+
+
+                        <TextView
+                            android:autoSizeMaxTextSize="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="right|center_vertical"
+                            android:textColor="#000"
+                            android:autoSizeTextType="uniform"
+                            android:id="@+id/edittext_fasal_name"
+                            android:layout_weight="7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </TextView>
+
+                        //pencil editing icon
+                        <RelativeLayout
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:padding="5dp"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:text="@string/fasal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <TextView
+                                android:textFontWeight="5"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:background="@drawable/fasal_type_tittle_icon_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    //0.1
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    //selected Fasal 0.6
+                    <LinearLayout
+                        android:layout_weight="0.6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:background="@drawable/selected_fasal_type_background"
+                        android:id="@+id/layout_choose_shoba"
+                        >
+
+                        //pencil editing icon
+                        <ImageView
+                            android:id="@+id/btn_shoba_select_page"
+                            android:background="@drawable/pencil_icon_background"
+                            android:src="@drawable/pencil"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="match_parent">
+
+                        </ImageView>
+
+                        <TextView
+                            android:autoSizeMaxTextSize="20dp"
+                            android:layout_marginRight="1dp"
+                            android:gravity="right|center_vertical"
+                            android:textColor="#000"
+                            android:autoSizeTextType="uniform"
+                            android:id="@+id/edittext_shoba_name"
+                            android:layout_weight="7"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </TextView>
+
+                        //pencil editing icon
+                        <RelativeLayout
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:padding="5dp"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:text="@string/fasal_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <TextView
+                                android:textFontWeight="5"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:background="@drawable/fasal_type_tittle_icon_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    //0.1
+                    <View
+                        android:layout_weight="0.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    <ListView
+                        android:divider="@drawable/transparent_background"
+                        android:dividerHeight="7dp"
+                        android:id="@+id/list_member_awami_raye"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="7.7"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+                //right side 0.6
+                <View
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <net.colindodd.toggleimagebutton.ToggleImageButton
+                    xmlns:tib="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/current_location_toggle"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="20dp"
+                    android:background="#fff"
+                    tib:layout_constraintRight_toRightOf="parent"
+                    tib:layout_constraintBottom_toBottomOf="parent"
+                    tib:tib_drawable_on="@drawable/current_location_enable"
+                    tib:tib_drawable_off="@drawable/current_location_disable"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

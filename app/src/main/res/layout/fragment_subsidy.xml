@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+        android:alpha="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_1_web"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+        </ImageView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="?attr/actionBarSize"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="10"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </View>
+            <ImageView
+                android:id="@+id/logo"
+                android:src="@drawable/logo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                >
+            </ImageView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:weightSum="10"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </View>
+            <ImageView
+                android:src="@drawable/only_name_logo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                >
+            </ImageView>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </View>
+            <TextView
+                android:id="@+id/btn"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:textColor="@color/primary"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Module Coming Soon"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </View>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<resources  tools:ignore="ExtraTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="ager_aap_pehlay_say_member_hain">If you already have account</string>
+    <string name="tou_apna_no_darj_karen">enter your phone number</string>
+    <string name="phn_no">Phone No</string>
+    <string name="sign_in">Sign in</string>
+    <string name="ager_aap_new_member_hain">For new member</string>
+    <string name="register_karen">Register</string>
+    <string name="agri_cultural_expert_yaha" translatable="false">For Agricultural Expert</string>
+    <string name="please_wait">Please Wait!</string>
+    <string name="select_language">اردو زبان کے لیے</string>
+    <string name="enter_correct_phn_no">Enter correct Phone Number</string>
+    <string name="welcome">Welcome </string>
+    <string name="register_yourself_first">Please! Register yourself first</string>
+    <string name="wait_for_domain_account_to_verify">Your account is not verified. Please wait</string>
+    <string name="thanks">Thank you</string>
+    <string name="error_in_receiving_code">If you do not receive the verification code kindly restart your phone</string>
+    <string name="phn_hint">03XX-XXXXXXX</string>
+
+    <string name="for_using_agri_asan">To use Agriasan</string>
+    <string name="darj_zail_tafseel_pur_karen">enter these details</string>
+    <string name="name">Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="city">City/Dist</string>
+    <string name="your_city">Your City</string>
+    <string name="phone_no">Phone</string>
+    <string name="id_card">ID Card</string>
+    <string name="darj_karen">Submit</string>
+    <string name="enter_your_name_first">Enter Your Name First</string>
+    <string name="enter_your_city_first">Enter Your City First</string>
+    <string name="enter_your_phn_first">Enter Your Phone Number Fisrt</string>
+    <string name="phn_no_already_exist">Sorry! This Phone Number already exist</string>
+
+    <string name="agricultrual_expert">Agricultural Expert</string>
+    <string name="yaha_register_karen">register here</string>
+    <string name="shoba">Domain</string>
+    <string name="shoba_hint">Your Occupation</string>
+    <string name="enter_your_shoba_first">Enter Your Domain First</string>
+
+    <string name="aapkay_mobile_pr_6_digit">6 digit code to your</string>
+    <string name="ka_code_bheja_gya_hai">Phone has been</string>
+    <string name="wo_code_darj_karen">sent enter it below</string>
+    <string name="code_nahi_mila_tou">If you do not get code in 60 Sec</string>
+    <string name="dobara">Resend</string>
+
+    <string name="enter_correct_code">Enter Correct Code</string>
+    <string name="resending_code">Resending Code</string>
+    <string name="check_messages">Check Your Messages</string>
+    <string name="wrong_code_or_network_fail">Wrong Code or Network Failure</string>
+
+    <string name="apka_account_dusray_mobile_say_login_ho_gya_hai">Your agriasan account has been logged in from another Phone</string>
+
+    <string name="no_internet">No Internet Connected</string>
+
+    <string name="please_enable_your_internet">Please enable your Internet or restart Phone</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="aapkay_pochay_gaye_sawalaat">Your Questions</string>
+    <string name="press_back_again_to_exit">Press Back again to exit</string>
+
+    <string name="id_card_number">ID Card No</string>
+    <string name="ham_say_rabta_karen">Contact Us</string>
+    <string name="logout_karen">Log Out</string>
+
+    <string name="matti">Soil</string>
+    <string name="mehkama_inhaar">Irrigation Department</string>
+    <string name="mehkama_tousee">Extension Department</string>
+    <string name="khaad">Fertilizer</string>
+    <string name="medicines">Medicines</string>
+    <string name="beej">Seed</string>
+    <string name="herb">Herb</string>
+    <string name="keeray">Insects</string>
+    <string name="tunnel_farming">Tunnel Farming</string>
+    <string name="janwar">Animals</string>
+    <string name="sooraj_mukhi">SunFlower</string>
+    <string name="sabziyan">Vegetables</string>
+    <string name="fish">Fish</string>
+    <string name="poultry">Poultry</string>
+    <string name="daalen">Pulse</string>
+    <string name="ganna">Sugarcane</string>
+    <string name="makai">Corn</string>
+    <string name="chawal">Rice</string>
+    <string name="gandum">Wheat</string>
+    <string name="kappas">Cotton</string>
+    <string name="sarson">Mustard</string>
+
+
+    <string name="kism">Type</string>
+    <string name="addtocart">Add to Cart</string>
+    <string name="buynow">Buy Now</string>
+
+    <string name="cart">Your Cart</string>
+    <string name="buy">Buy</string>
+    <string name="total_price">Total Price</string>
+
+    <string name="address">Address</string>
+    <string name="delivery_address">Delivery Address</string>
+
+    <string name="receiver_name">Receiver Name</string>
+
+    <string name="phn_hint_2">03XXXXXXXXX</string>
+
+    <string name="your_cart_products">Your Cart Products</string>
+
+    <string name="your_bill">Your Bill</string>
+
+    <string name="last_time_check">Check Out</string>
+
+
+    <string name="cash_on_delivery">Cash on Delivery</string>
+
+    <string name="alert">Alert!</string>
+    <string name="order_received">Your Order has been Received</string>
+    <string name="thankyou">Thank You!</string>
+
+    <string name="your_orders">Your Orders</string>
+    <string name="contact_no">Your Contact No:</string>
+    <string name="pending">Pending</string>
+    <string name="receiver_info">Receiver Information</string>
+
+    <string name="orders_to_deliver">Orders to Deliver</string>
+    <string name="order_status">Update Order Status</string>
+
+
+    <string name="seen">Seen</string>
+
+    <string name="sold">Sold</string>
+
+
+
+
+
+
+
+</resources>

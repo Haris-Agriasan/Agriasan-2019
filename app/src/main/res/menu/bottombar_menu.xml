@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Bottom bar menu by roughike-->
+<!--https://github.com/roughike/BottomBar-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Every item for another tab-->
+    <item
+        android:id="@+id/navigation_bazaar"
+        android:icon="@drawable/bazaar"
+        android:title="@string/title_bazaar" />
+    <item
+        android:id="@+id/navigation_public_opinion"
+        android:icon="@drawable/public_opinion"
+        android:title="@string/title_public_opinion" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_subsidy"
+        android:icon="@drawable/subsidy"
+        android:title="@string/title_subsidy" />
+</menu>
+<!--Steps-->
+<!--1. To add new tab paste new item block-->
+<!--2. Change android:id-->
+<!--3. Change android:icon (must add icon to drawable)-->
+<!--4. Change android:title-->
+
+<!--Visit copyandpaste.website-->
+<!--Template made by Paweł Marcinkiewicz-->

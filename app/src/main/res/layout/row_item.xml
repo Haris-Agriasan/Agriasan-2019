@@ -1,0 +1,281 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/question_answer_back"
+    android:id="@+id/layout_view_question_detail"
+    >
+
+    //linear lay out for pic question and answer
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.6"
+        android:orientation="horizontal"
+        >
+
+
+        //for details of question like name city time
+        <LinearLayout
+            android:layout_weight="6.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //for name city and fasal
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                //question ki fasal
+                <TextView
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:id="@+id/textview_fasal"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+
+
+
+                //name and lahore of person asking question
+                <TextView
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#3BAE49"
+                    android:id="@+id/textview_name_city_question"
+                    android:layout_weight="7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            //for description
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="vvbbvbj,n  vhgvbkjh bngbjkn gj n"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:id="@+id/textview_question"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+            </TextView>
+
+            //time
+            <TextView
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:id="@+id/textview_time_question"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </TextView>
+
+            ///Divider between question and answer
+
+            <View
+                style="@style/Divider"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </View>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </View>
+            //for name city and fasal
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                //question ki fasal
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left"
+                    android:text="test"
+                    android:autoSizeTextType="uniform"
+                    android:id="@+id/textview_occupation"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                //name and lahore of person asking question
+                <TextView
+                    android:autoSizeTextType="uniform"
+                    android:id="@+id/textview_name_city_answer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#3BAE49"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            //for description
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"></View>
+
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:id="@+id/textview_answer"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </TextView>
+
+            //time
+            <TextView
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:gravity="right|bottom"
+                android:id="@+id/textview_time_answer"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+
+        <com.comix.rounded.RoundedCornerImageView
+            android:scaleType="fitXY"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_image_for_question"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            app:cornerBottomDisable="false"
+            app:cornerLeftDisable="false"
+            app:cornerRightDisable="false"
+            app:cornerTopDisable="false"
+            app:cornerRadius="6dp"
+            android:src="@drawable/corn"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+
+        //just fot button
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </View>
+
+
+            //layout for button and icon
+            <RelativeLayout
+                android:id="@+id/view_product_details"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:elevation="5dp"
+                    >
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                    </View>
+                    <TextView
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:autoSizeTextType="uniform"
+                        android:text="مکمل تفصیل دیکھیں"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8">
+                    </TextView>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/awami_raye_detail_button"
+                        >
+                    </ImageView>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"></View>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginBottom="3dp"
+                    android:autoSizeMaxTextSize="26dp"
+                    android:autoSizeStepGranularity="10sp"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:autoSizeTextType="uniform"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonshape_submit"
+                    />
+            </RelativeLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </View>
+        </LinearLayout>
+</LinearLayout>

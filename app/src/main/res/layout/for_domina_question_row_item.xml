@@ -1,0 +1,323 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@drawable/question_answer_back"
+    >
+
+    //linear lay out for pic question and answer
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.9"
+        android:orientation="horizontal"
+        >
+        /9.6
+        //for details of question like name city time
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //for name city and fasal
+            //0.8
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                //5
+                //question ki fasal
+                <TextView
+                    android:gravity="center_vertical|left"
+                    android:text="Makai"
+                    android:textStyle="bold"
+                    android:id="@+id/textview_doamin_fasal"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                //5
+                //name and lahore of person asking question
+                <TextView
+                    android:text="Haris/Lahore"
+                    android:gravity="center_vertical|right"
+                    android:textStyle="bold"
+                    android:textColor="#3BAE49"
+                    android:id="@+id/textview_domain_name_city_question"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+            //1.5
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:background="@drawable/buttonshape_add_recording"
+                >
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/player_time"
+                    android:textColor="#fff"
+                    android:autoSizeTextType="uniform"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+                <SeekBar
+                    android:id="@+id/seek_bar"
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </SeekBar>
+                <ImageView
+                    android:id="@+id/play_question"
+                    android:src="@drawable/play"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+                <ImageView
+                    android:id="@+id/pause_question"
+                    android:src="@drawable/pause"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            //0.2
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </View>
+            ////for images
+            //3.5
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="3.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+                <com.comix.rounded.RoundedCornerImageView
+                android:scaleType="centerCrop"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/question_domain_image_0"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                app:cornerBottomDisable="false"
+                app:cornerLeftDisable="false"
+                app:cornerRightDisable="false"
+                app:cornerTopDisable="false"
+                app:cornerRadius="6dp" android:src="@drawable/carrot"
+                    />
+
+                <View
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </View>
+                <RelativeLayout
+                    android:background="@drawable/rounded_background_images"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <com.comix.rounded.RoundedCornerImageView
+                        android:scaleType="centerCrop"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/question_domain_image_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:cornerBottomDisable="false"
+                        app:cornerLeftDisable="false"
+                        app:cornerRightDisable="false"
+                        app:cornerTopDisable="false"
+                        app:cornerRadius="6dp"
+                        android:src="@drawable/corn"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_weight="0.25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </View>
+                <RelativeLayout
+                    android:background="@drawable/rounded_background_images"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <com.comix.rounded.RoundedCornerImageView
+                        android:scaleType="centerCrop"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/question_domain_image_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        app:cornerBottomDisable="false"
+                        app:cornerLeftDisable="false"
+                        app:cornerRightDisable="false"
+                        app:cornerTopDisable="false"
+                        app:cornerRadius="6dp"
+                        android:src="@drawable/beetroot"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            //1
+            //for static sawal
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                >
+
+                <View
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </View>
+                //name and lahore of person asking question
+                <TextView
+                    android:autoSizeTextType="uniform"
+                    android:text="سوال:"
+                    android:id="@+id/textview_name_city_answer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#3BAE49"
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            //2.5
+            //for description
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="tou sawal kuch is tarha k mere pas ek fasal hai gandum ki or wo kharab ho gai hai"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:id="@+id/textview_question_for_domain"
+                android:layout_weight="2.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </TextView>
+
+
+            //for time
+            <TextView
+                android:gravity="center_vertical|right"
+                android:autoSizeTextType="uniform"
+                android:text="paanch ghnatay qabal"
+                android:textStyle="bold"
+                android:id="@+id/textview_question_time"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    //0.1
+    <View
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </View>
+
+    //1
+        //just fot button
+    <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5">
+            </View>
+
+
+            //layout for button and icon
+            <RelativeLayout
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10"
+                    android:orientation="horizontal"
+                    android:elevation="5dp"
+                    >
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8.5">
+                    </View>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/awami_raye_detail_button"
+                        >
+                    </ImageView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/enter_for_answer_button"
+                    android:layout_marginBottom="3dp"
+                    android:text="جواب دیں"
+                    android:autoSizeMaxTextSize="30dp"
+                    android:autoSizeStepGranularity="10sp"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:autoSizeTextType="uniform"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonshape_submit"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

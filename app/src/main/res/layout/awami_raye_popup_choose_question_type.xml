@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        // for background fixed image
+        <LinearLayout
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.5"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/background_1_web"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                >
+            </ImageView>
+        </LinearLayout>
+
+        ///for Data
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginLeft="85dp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="اپنا شعبہ بتایں"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                </TextView>
+
+                <LinearLayout
+                    android:background="@drawable/question_answer_back"
+                    android:weightSum="10"
+                    android:orientation="vertical"
+                    android:layout_weight="7.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <View
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.65"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <View
+                            android:background="@drawable/left_gray_title_background"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:autoSizeTextType="uniform"
+                            android:textStyle="bold"
+                            android:text="منتخب کریں"
+                            android:layout_weight="6"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+                        <View
+                            android:background="@drawable/right_gray_title_background"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_weight="0.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_weight="2.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/seed"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/seeds"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="بیج"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/tick_seed"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/medicine"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/medicine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="ادویات"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/tick_medicine"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/khaad"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/sack"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="کھاد"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/tick_khaad"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_weight="0.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_weight="2.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/mehkama_tausee"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/mehkama_tausee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="محکمہ توسیع"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/tick_mehkama_tausee"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/mehkama_inhaar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/mehkama_inhaar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="محکمہ انھار"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/tick_mehkama_inhaar"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/matti"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/matti"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="@string/matti"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/tick_matti"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_weight="0.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_weight="2.2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/keeray"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/keeray_icon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="کیڑے"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/tick_keeray"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/herb"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/herb"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:text="جڑی بوٹیاں"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/tick_herb"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:layout_weight="2.4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <com.github.abdularis.civ.CircleImageView
+                                app:highlightColor="@color/yellow"
+                                android:id="@+id/tunnel_farming"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/gray_color"
+                                app:strokeColor="@color/colorAccent"
+                                />
+                            <LinearLayout
+                                android:weightSum="10"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <View
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                                <ImageView
+                                    android:src="@drawable/tunnel_farming"
+                                    android:scaleType="fitCenter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="4"
+                                    >
+
+                                </ImageView>
+                                <TextView
+                                    android:text="ٹنل فارمنگ"
+                                    android:textColor="#000000"
+                                    android:layout_weight="3.5"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    >
+
+                                </TextView>
+
+                                <View
+                                    android:layout_weight="0.5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp">
+
+                                </View>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+                            <ImageView
+                                android:id="@+id/tick_tunnel"
+                                android:src="@drawable/tick"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp">
+
+                            </ImageView>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </View>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="10"
+                        android:orientation="horizontal"
+                        android:elevation="5dp"
+                        >
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8.5">
+                        </View>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="match_parent"
+
+                            >
+                        </ImageView>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button_shoba_choosed"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/enter"
+                        android:autoSizeMaxTextSize="30dp"
+                        android:autoSizeStepGranularity="10sp"
+                        android:textColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:autoSizeTextType="uniform"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/buttonshape_submit"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            </View>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

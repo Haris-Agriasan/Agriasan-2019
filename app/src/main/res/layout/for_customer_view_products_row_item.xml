@@ -1,0 +1,368 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main_parent"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@drawable/question_answer_back">
+
+    //linear lay out for pic question and answer
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.6"
+        android:orientation="horizontal"
+        >
+        //for details of question like name city time
+        <LinearLayout
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //for name city and fasal
+
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+                //name and lahore of person asking question
+                <TextView
+                    android:text="product name"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="#3BAE49"
+                    android:id="@+id/textview_name_of_product"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    >
+
+                </TextView>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:background="#8D8C8C"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            //name and lahore of person asking question
+            <TextView
+                android:text="product Price"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/textview_product_price"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                >
+
+            </TextView>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="0.05"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#8D8C8C"></View>
+
+                <View
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                //time
+                <TextView
+                    android:text="19-02-20 10:58 AM"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textview_time_date_product"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                <TextView
+                    android:text="03211234567"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:id="@+id/textview_vendor_contact_product"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </View>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_image_of_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/corn"
+                app:civ_border_color="#FF000000"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+
+    //just fot button
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+        <View
+            android:id="@+id/view_remove_product_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+        <Button
+            android:layout_weight="2"
+            android:id="@+id/btn_remove_product_cart"
+            android:text="ڈیلیٹ"
+            android:autoSizeMaxTextSize="26dp"
+            android:autoSizeStepGranularity="10sp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/buttonshape_delete">
+
+        </Button>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+        <ImageView
+            android:id="@+id/btn_call_vendor"
+            android:background="@drawable/buttonshape_submit"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phone_call"
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+        <RelativeLayout
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5">
+                </View>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/awami_raye_detail_button"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/view_product_details"
+                android:text="تفصیل دیکھیں"
+                android:autoSizeMaxTextSize="26dp"
+                android:autoSizeStepGranularity="10sp"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonshape_submit"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_for_quantity"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </View>
+
+    <LinearLayout
+
+        android:id="@+id/layout_quantity"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+        <com.shawnlin.numberpicker.NumberPicker
+            android:gravity="center"
+            android:id="@+id/quantity_picker"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:np_orientation="horizontal"
+            app:np_dividerColor="#000"
+            app:np_max="100"
+            app:np_min="1"
+            app:np_selectedTextColor="#3BAE49"
+            app:np_textColor="#3BAE49"
+            app:np_value="1"
+            app:np_dividerThickness="2dp"
+            app:np_selectedTextAlign="selectedTextAlignCenter"
+            app:np_textAlign="textAlignCenter"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+        <TextView
+            android:id="@+id/textview_midaar_quantity"
+            android:textColor="#3BAE49"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/mikdaar"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25">
+        </View>
+
+    </LinearLayout>
+
+</LinearLayout>

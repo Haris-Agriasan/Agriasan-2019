@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+            <LinearLayout
+                android:alpha="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/background_1_web"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            ///for Data
+
+            <LinearLayout
+                android:paddingTop="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <View
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+                <LinearLayout
+                    android:weightSum="10"
+                    android:layout_weight="9.5"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    >
+
+                    <LinearLayout
+                        android:background="@drawable/question_answer_back"
+                        android:weightSum="10"
+                        android:orientation="vertical"
+                        android:layout_weight="8.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <View
+                            android:layout_weight="0.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                        </View>
+
+                        <LinearLayout
+                            android:weightSum="10"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                            <View
+                                android:background="@drawable/left_gray_title_background"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+                            <TextView
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:autoSizeTextType="uniform"
+                                android:textStyle="bold"
+                                android:text="منتخب کریں"
+                                android:layout_weight="6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+
+                            <View
+                                android:background="@drawable/right_gray_title_background"
+                                android:layout_weight="2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        <LinearLayout
+                            android:layout_weight="3.0"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_weight="2.4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <com.github.abdularis.civ.CircleImageView
+                                    app:highlightColor="@color/yellow"
+                                    android:id="@+id/beej_iksaam_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/gray_color"
+                                    app:strokeColor="@color/colorAccent"
+                                    />
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                    <ImageView
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/seeds"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:textColor="#000000"
+                                        android:layout_weight="3.5"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="بیج کی \nاقسام"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        >
+
+                                    </TextView>
+
+                                    <View
+                                        android:layout_weight="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_weight="2.4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <com.github.abdularis.civ.CircleImageView
+                                    app:highlightColor="@color/yellow"
+                                    android:id="@+id/fasal_adoyaat_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/gray_color"
+                                    app:strokeColor="@color/colorAccent"
+                                    />
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                    <ImageView
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/wheat"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:paddingRight="1dp"
+                                        android:paddingLeft="1dp"
+                                        android:textColor="#000000"
+                                        android:layout_weight="3.5"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="فصل کی \nادویات"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        >
+
+                                    </TextView>
+
+                                    <View
+                                        android:layout_weight="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                </LinearLayout>
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_weight="2.4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <com.github.abdularis.civ.CircleImageView
+                                    app:highlightColor="@color/yellow"
+                                    android:id="@+id/keray_mar_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/gray_color"
+                                    app:strokeColor="@color/colorAccent"
+                                    />
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                    <ImageView
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/bug"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:paddingRight="1dp"
+                                        android:paddingLeft="1dp"
+                                        android:textColor="#000000"
+                                        android:layout_weight="3.5"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="کیڑے مار\nادویات"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        >
+
+                                    </TextView>
+
+                                    <View
+                                        android:layout_weight="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                </LinearLayout>
+
+
+                                <View
+                                    android:layout_weight="0.3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent">
+
+                                </View>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                        </View>
+
+                        <LinearLayout
+                            android:layout_weight="3.0"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_weight="2.4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <com.github.abdularis.civ.CircleImageView
+                                    app:highlightColor="@color/yellow"
+                                    android:id="@+id/machines_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/gray_color"
+                                    app:strokeColor="@color/colorAccent"
+                                    />
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                    <ImageView
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/gears"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:paddingRight="1dp"
+                                        android:paddingLeft="1dp"
+                                        android:textColor="#000000"
+                                        android:layout_weight="3.5"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="مشینوں کی \nمعلومات"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        >
+
+                                    </TextView>
+
+                                    <View
+                                        android:layout_weight="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_weight="2.4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <com.github.abdularis.civ.CircleImageView
+                                    app:highlightColor="@color/yellow"
+                                    android:id="@+id/sabzi_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/gray_color"
+                                    app:strokeColor="@color/colorAccent"
+                                    />
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                    <ImageView
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/vegetables"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:paddingRight="1dp"
+                                        android:paddingLeft="1dp"
+                                        android:textColor="#000000"
+                                        android:layout_weight="3.5"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="سبزی کی \nغزائیت"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        >
+
+                                    </TextView>
+
+                                    <View
+                                        android:layout_weight="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                </LinearLayout>
+
+
+
+                            </RelativeLayout>
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+                            <RelativeLayout
+                                android:layout_weight="2.4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <com.github.abdularis.civ.CircleImageView
+                                    app:highlightColor="@color/yellow"
+                                    android:id="@+id/khaad_iksaam_button"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/gray_color"
+                                    app:strokeColor="@color/colorAccent"
+                                    />
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <View
+                                        android:layout_weight="3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                    <ImageView
+                                        android:scaleType="fitCenter"
+                                        android:src="@drawable/sack"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="3"
+                                        >
+
+                                    </ImageView>
+                                    <TextView
+                                        android:paddingRight="1dp"
+                                        android:paddingLeft="1dp"
+                                        android:textColor="#000000"
+                                        android:layout_weight="3.5"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:text="کھاد کی \nاقسام"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        >
+
+                                    </TextView>
+
+                                    <View
+                                        android:layout_weight="2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp">
+
+                                    </View>
+                                </LinearLayout>
+
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_weight="0.4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_button_register_vendor"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:elevation="5dp"
+                            >
+                            <View
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                            <TextView
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:text="پروڈکٹس فروخت کریں"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8">
+                            </TextView>
+                            <View
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                            <ImageView
+                                android:src="@drawable/bazaar_full_white"
+                                android:layout_width="0dp"
+                                android:layout_weight="1.5"
+                                android:layout_height="match_parent"
+                                >
+                            </ImageView>
+                            <View
+                                android:layout_weight="0.1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_become_a_seller"
+                            android:autoSizeStepGranularity="10sp"
+                            android:textColor="#FFFFFF"
+                            android:textAlignment="center"
+                            android:autoSizeTextType="uniform"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bacground_second_green"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_button_seller_products"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:elevation="5dp"
+                            >
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </View>
+                            <TextView
+                                android:textColor="#FFFFFF"
+                                android:textAlignment="center"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:text="@string/aapki_products"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8">
+                            </TextView>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+                            </View>
+                            <ImageView
+                                android:src="@drawable/boxes"
+                                android:layout_width="0dp"
+                                android:layout_weight="1.5"
+                                android:layout_height="match_parent"
+                                >
+                            </ImageView>
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5">
+                            </View>
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_view_products"
+                            android:textStyle="bold"
+                            android:autoSizeMaxTextSize="30dp"
+                            android:autoSizeStepGranularity="10sp"
+                            android:textColor="#FFFFFF"
+                            android:textAlignment="center"
+                            android:autoSizeTextType="uniform"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/buttonshape_submit"
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+
+            </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

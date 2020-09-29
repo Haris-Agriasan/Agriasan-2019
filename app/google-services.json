@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "762888094150",
+    "firebase_url": "https://agriasan-6b704.firebaseio.com",
+    "project_id": "agriasan-6b704",
+    "storage_bucket": "agriasan-6b704.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762888094150:android:32d772e3515b30c92532c7",
+        "android_client_info": {
+          "package_name": "agri_asan.com.agriasan06_12_19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762888094150-s8ikmsro5808543lm6en4pokl19rqrhr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "agri_asan.com.agriasan06_12_19",
+            "certificate_hash": "7961018d50a2f1f68574b1ece8d7035069067932"
+          }
+        },
+        {
+          "client_id": "762888094150-cdmu5b55u10uq82snmrndurbpcfrer1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALzq0WtwoczJ4SuDoiCOb94aIHKPiYfTk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762888094150-cdmu5b55u10uq82snmrndurbpcfrer1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

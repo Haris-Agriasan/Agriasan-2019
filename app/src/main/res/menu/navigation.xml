@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation_bazaar"
+        android:icon="@drawable/bazaar_full"
+        android:title="@string/title_bazaar" />
+
+    <item
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation_public_opinion"
+        android:icon="@drawable/people_opinion_full"
+        android:title="@string/title_public_opinion" />
+
+    <item
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_full"
+        android:title="@string/title_home" />
+
+    <item
+        app:labelVisibilityMode="labeled"
+        android:id="@+id/navigation_subsidy"
+        android:icon="@drawable/subsidy_full"
+        android:title="@string/title_subsidy" />
+
+</menu>

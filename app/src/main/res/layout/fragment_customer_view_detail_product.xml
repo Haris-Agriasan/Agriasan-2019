@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:alpha="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/background_1_web"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                >
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                //left side 0.6
+                <View
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </View>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    //selected Fasal  0.5
+                    <LinearLayout
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/selected_fasal_type_background"
+                        >
+
+                        <TextView
+                            android:padding="3dp"
+                            android:textSize="@dimen/_15ssp"
+                            android:inputType="text"
+                            android:layout_marginRight="1dp"
+                            android:gravity="right|center_vertical"
+                            android:textColor="#000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:id="@+id/product_name"
+                            android:layout_weight="8.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </TextView>
+
+                        //pencil editing icon
+                        <RelativeLayout
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:textSize="@dimen/_15ssp"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:text="@string/naam"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:autoSizeTextType="uniform"
+                                android:background="@drawable/fasal_type_tittle_icon_background"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textFontWeight="5"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    //selected Fasal 0.5
+                    <LinearLayout
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="10"
+                        android:background="@drawable/selected_fasal_type_background"
+                        >
+
+
+                        <TextView
+                            android:padding="3dp"
+                            android:textSize="@dimen/_15ssp"
+                            android:inputType="number"
+                            android:layout_marginRight="1dp"
+                            android:gravity="right|center_vertical"
+                            android:textColor="#000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:id="@+id/product_price"
+                            android:layout_weight="8.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+                        </TextView>
+
+                        //pencil editing icon
+                        <RelativeLayout
+                            android:layout_weight="1.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/qeemat"
+                                android:textColor="#000"
+                                android:textStyle="bold">
+                            </TextView>
+
+                            <TextView
+                                android:textFontWeight="5"
+                                android:autoSizeTextType="uniform"
+                                android:gravity="center"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:background="@drawable/fasal_type_tittle_icon_background"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="0.3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@drawable/selected_fasal_type_background"
+                            >
+                            <TextView
+                                android:padding="3dp"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="right|center_vertical"
+                                android:textColor="#000"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:id="@+id/product_kilo_litre"
+                                android:layout_weight="7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:gravity="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:text="@string/mikdaar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                </TextView>
+                                <TextView
+                                    android:textFontWeight="5"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/fasal_type_tittle_icon_background"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                </TextView>
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+                        <LinearLayout
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:background="@drawable/selected_fasal_type_background"
+                            >
+                            <TextView
+                                android:padding="3dp"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="right|center_vertical"
+                                android:textColor="#000"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:layout_weight="7"
+                                android:id="@+id/textview_mikdaar"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"/>
+                            //pencil editing icon
+                            <RelativeLayout
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:padding="5dp"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:gravity="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:text="@string/paimana"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                </TextView>
+
+                                <TextView
+                                    android:textFontWeight="5"
+                                    android:autoSizeTextType="uniform"
+                                    android:gravity="center"
+                                    android:textColor="#000"
+                                    android:textStyle="bold"
+                                    android:background="@drawable/fasal_type_tittle_icon_background"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                </TextView>
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+                    //2.5
+                    <LinearLayout
+                        android:background="@drawable/question_answer_back"
+                        android:layout_weight="1.4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="10"
+                        android:orientation="vertical"
+                        >
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        //pics text
+                        <LinearLayout
+                            android:weightSum="10"
+                            android:layout_weight="1.4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/left_gray_title_background"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+                            <TextView
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="center"
+                                android:text="تفصیل"
+                                android:layout_weight="4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/right_gray_title_background"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"></View>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        <TextView
+                            android:scrollbars="vertical"
+                            android:padding="3dp"
+                            android:textSize="@dimen/_15ssp"
+                            android:text="فصل کی ادویات"
+                            android:fadeScrollbars="false"
+                            android:textColor="#000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:id="@+id/product_details"
+                            android:layout_weight="7.4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/contact_us_partition"
+                        android:background="@drawable/question_answer_back"
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        >
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        //pics text
+                        <LinearLayout
+                            android:weightSum="10"
+                            android:layout_weight="1.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/left_gray_title_background"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+                            <TextView
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="center"
+                                android:text="رابطہ نمبر"
+                                android:layout_weight="4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/right_gray_title_background"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        <LinearLayout
+                            android:id="@+id/layout_call_vendor"
+                            android:orientation="horizontal"
+                            android:layout_weight="1.5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                            <View
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                            <TextView
+
+                                android:id="@+id/vendor_contact_no"
+                                android:textColor="#504E4E"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="center"
+                                android:layout_weight="9.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </TextView>
+                            <View
+                                android:layout_weight="0.5"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                            <ImageView
+                                android:id="@+id/btn_call_team"
+                                android:background="@drawable/buttonshape_call_curve"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/phone_call"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </ImageView>
+                            <View
+                                android:layout_weight="1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+
+                    </LinearLayout>
+
+
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+                    //2
+                    <LinearLayout
+                        android:background="@drawable/question_answer_back"
+                        android:layout_weight="1.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:weightSum="10"
+                        android:orientation="vertical"
+                        >
+
+                        //0.25
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        //pics text  1.1
+                        <LinearLayout
+                            android:layout_weight="1.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            >
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/left_gray_title_background"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+                            <TextView
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_15ssp"
+                                android:gravity="center"
+                                android:text="@string/tasaveer"
+                                android:layout_weight="4"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </TextView>
+
+                            <View
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/right_gray_title_background"
+                                android:layout_weight="3"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"></View>
+
+                        </LinearLayout>
+
+                        //0.25
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+
+                        </View>
+
+                        //section of pics 8.15
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="8.15"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            >
+
+                            <View
+                                android:layout_weight="0.25"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                            </View>
+
+                            <RelativeLayout
+                                android:background="@drawable/rounded_background_images"
+                                android:layout_weight="6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+
+                                <GridView
+                                    android:numColumns="3"
+                                    android:fadeScrollbars="false"
+                                    android:scrollbars="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/gv">
+                                </GridView>
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_weight="0.25"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent">
+                            </View>
+                        </LinearLayout>
+
+                        //0.25
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp">
+                        </View>
+                    </LinearLayout>
+
+                    //0.05
+                    <View
+                        android:layout_weight="0.05"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/e-commerce_partition"
+                        android:background="@drawable/question_answer_back"
+                        android:layout_weight="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+                        <LinearLayout
+                            android:id="@+id/layout_add_to_cart_btn"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/buttonshape_add_to_cart"
+                            android:orientation="vertical"
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+
+                            <View
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+                            </View>
+                            <ImageView
+                                android:src="@drawable/add_to_cart_basket_2"
+                                android:layout_weight="7"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                            </ImageView>
+                            <View
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+                            </View>
+                            <TextView
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_11ssp"
+                                android:text="@string/addtocart"
+                                android:gravity="center_horizontal|bottom"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                            <com.shawnlin.numberpicker.NumberPicker
+                                android:id="@+id/quantity_picker"
+                                android:layout_weight="7"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_centerInParent="true"
+                                app:np_width="64dp"
+                                app:np_height="180dp"
+                                app:np_dividerColor="#000"
+                                app:np_max="100"
+                                app:np_min="1"
+                                app:np_selectedTextColor="#ff7b00"
+                                app:np_selectedTextSize="@dimen/_20ssp"
+                                app:np_textColor="#ff7b00"
+                                app:np_textSize="@dimen/_15ssp"
+                                app:np_value="1"
+                                app:np_dividerDistance="25dp"
+                                app:np_dividerThickness="1dp"
+                                />
+
+                            <TextView
+                                android:id="@+id/textview_midaar_quantity"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="center_horizontal|bottom"
+                                android:text="@string/mikdaar"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                            </TextView>
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+                        <LinearLayout
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/buttonshape_add_to_cart"
+                            android:orientation="vertical"
+                            android:layout_weight="5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+
+                            <View
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+                            </View>
+                            <ImageView
+                                android:src="@drawable/buy_now"
+                                android:layout_weight="7"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                            </ImageView>
+                            <View
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+
+                            </View>
+                            <TextView
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_11ssp"
+                                android:gravity="center_horizontal|bottom"
+                                android:text="@string/buynow"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp">
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_weight="0.25"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent">
+
+                        </View>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_weight="0.02"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                    </View>
+
+                </LinearLayout>
+
+                //right side 0.6
+                <View
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                </View>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

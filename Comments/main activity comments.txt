@@ -1,0 +1,183 @@
+
+    /////////for less than O version
+//    private void addNotification(String mem_name, String fasal, String shoba, String n_id) {
+//        fasal="("+fasal+"/"+shoba+")";
+//        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.logo_square);
+//
+//        NotificationCompat.Builder builder =
+//                new NotificationCompat.Builder(this)
+//                        .setSmallIcon(R.mipmap.logo_fit_2) //set icon for notification
+//                        .setContentTitle(mem_name+" ! آپکے سوال کا جواب آ چکا ہے ")
+//                        .setContentText(fasal+" کے سوال کی تفصیل دیکھنے کے لیے کلک کریں ")
+//                        .setAutoCancel(true) // makes auto cancel of notification
+//                        .setPriority(Notification.PRIORITY_HIGH) //set priority of notification
+//                        .setVibrate(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400})
+//                        .setLargeIcon(largeIcon)
+//                        .setDefaults(Notification.DEFAULT_SOUND);
+////                      .setDefaults(Notification.DEFAULT_ALL);
+//
+//
+//        Intent notificationIntent = new Intent(this, LogoSplashActivity.class);
+////        notificationIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//        //notification message will get at NotificationView
+////        notificationIntent.putExtra("message", "This is a notification message");
+//
+//        editor = pref.edit();
+//        notificationIntent.putExtra("notify_id", ""+n_id);
+//        editor.putString("notify_id", notify_id); // Storing string
+//        editor.apply();
+//        Random random = new Random();
+//        int m = random.nextInt(9999 - 1000) + 1000;
+//
+//        PendingIntent pendingIntent = PendingIntent.getActivity(this, m, notificationIntent,0);
+//        builder.setContentIntent(pendingIntent);
+//
+//        // Add as notification
+//        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//        manager.notify(m, builder.build());
+//    }
+    /////////for less than O version END
+
+
+    /////////NOTIFICATION ON PHONE Android O and Greater
+    //@RequiresApi(api = Build.VERSION_CODES.O)
+//    public void add_notify(String mem_name, String fasal, String shoba, String n_id){
+//        NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//        // The id of the channel.
+//        String id = "my_channel_01";
+//        // The user-visible name of the channel.
+//        CharSequence name = getString(R.string.app_name);
+//        // The user-visible description of the channel.
+//        String description = getString(R.string.app_name);
+//        int importance = NotificationManager.IMPORTANCE_HIGH;
+//        NotificationChannel mChannel = new NotificationChannel(id, name,importance);
+//        // Configure the notification channel.
+//        mChannel.setDescription(description);
+//        mChannel.enableLights(true);
+//        // Sets the notification light color for notifications posted to this
+//        // channel, if the device supports this feature.
+//        mChannel.setLightColor(Color.GREEN);
+//        mChannel.enableVibration(true);
+//        mChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+//        assert mNotificationManager != null;
+//        mNotificationManager.createNotificationChannel(mChannel);
+//        mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+//// Sets an ID for the notification, so it can be updated.
+//        int notifyID = 1;
+//// The id of the channel.
+//        String CHANNEL_ID = "my_channel_01";
+//        ///////////CLASS ON CLICK ON NOTIFICATION
+//        Intent notificationIntent = new Intent(this, LogoSplashActivity.class);
+////        notificationIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+////      notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        editor = pref.edit();
+//        notificationIntent.putExtra("notify_id", ""+n_id);
+//        editor.putString("notify_id", notify_id); // Storing string
+//        editor.apply();
+//
+//        Random random = new Random();
+//        int m = random.nextInt(9999 - 1000) + 1000;
+//        PendingIntent pendingIntent = PendingIntent.getActivity(this, m, notificationIntent,0);
+//        ///////////CLASS ON CLICK ON NOTIFICATION END
+//        fasal="("+fasal+"/"+shoba+")";
+//        Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.logo_square);
+//    // Create a notification and set the notification channel.
+//        Notification notification = new Notification.Builder(this)
+//                .setContentTitle(mem_name+" ! آپکے سوال کا جواب آ چکا ہے ")
+//                .setContentText(fasal+" کے سوال کی تفصیل دیکھنے کے لیے کلک کریں ")
+//                .setSmallIcon(R.mipmap.logo_fit_2)
+//                .setDefaults(Notification.DEFAULT_SOUND)
+//                .setPriority(Notification.PRIORITY_HIGH)
+//                .setChannelId(CHANNEL_ID)
+//                .setLargeIcon(largeIcon)
+//                .setContentIntent(pendingIntent)
+//                .setAutoCancel(true)
+//                .build();
+//        // Issue the notification.
+//
+//        //(int) System.currentTimeMillis()
+//        mNotificationManager.notify(m, notification);
+//    }
+    ////////NOTIFICATION ON PHONE Android O and Greater END
+
+    //////////NOTIFICATION ALERT FOR ANSWER OF QUESTION
+//    final Query query_notify = reference;
+////        .child("Questions").orderByChild("Member_Phone").equalTo(Phone);
+//        query_notify.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+//                if (dataSnapshot.child("Questions").exists()){
+//                    dataSnapshot.getChildren();
+//                    int co=0;
+//                    for (DataSnapshot issue : dataSnapshot.child("Questions").getChildren()) {
+//                        Member Question = issue.getValue(Member.class);
+//                        String id_ck="";
+//                        if (dataSnapshot.child("Questions").child(Question.getID()+"").child("Answer").exists())
+//                        {
+//                            co++;
+////                            Toast.makeText(MainActivity.this,""+co, Toast.LENGTH_SHORT).show();
+//                    for (DataSnapshot issue_2 : dataSnapshot.child("Questions").getChildren()) {
+//                        Member question = issue_2.getValue(Member.class);
+////                        Toast.makeText(MainActivity.this,"Check 2", Toast.LENGTH_SHORT).show();
+//
+//                        String phone_db="";
+//                        String read="";
+//                        String notify="";
+//                        if (!TextUtils.isEmpty(question.getMember_Phone()))
+//                        {
+//                            phone_db=question.getMember_Phone();
+//                        }
+//                        if (!TextUtils.isEmpty(question.getRead()))
+//                        {
+//                            read=question.getRead();
+//                        }
+//                        if (!TextUtils.isEmpty(question.getNotify()))
+//                        {
+//                            notify=question.getNotify();
+//                        }
+//                        if (phone_db.equals(Phone) && read.equals("") && notify.equals("")){
+//                            if (!TextUtils.isEmpty(question.getAnswer())){
+//                            boolean chk_key=true;
+//                            for (int i=0;i<keys.size();i++){
+//                                if (keys.get(i).equals(question.getID())){
+//                                    chk_key=false;
+//                                    break;
+//                                }
+//                                else{
+//                                    chk_key=true;
+//                                }
+//                            }
+//                            if (chk_key){
+//                                databaseReference= FirebaseDatabase.getInstance().getReference()
+//                                        .child("Questions").child(question.getID());
+//                                databaseReference.child("Notify").setValue("yes");
+//                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//                                    keys.add(question.getID());
+//                                    add_notify(question.getMember_Name(),
+//                                            question.getFasal()
+//                                            ,question.getFasal_Type_Shoba(), question.getID());
+//                                }else{
+//                                    keys.add(question.getID());
+//                                    addNotification(question.getMember_Name(),
+//                                            question.getFasal()
+//                                            ,question.getFasal_Type_Shoba(), question.getID());
+//                                }
+//                            }
+//
+//                            }
+//                        }
+////                        }
+//                    }
+////
+//                        }
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError databaseError) {
+//            }
+//        });
+//        //////////NOTIFICATION ALERT FOR ANSWER OF QUESTION END
+
+    //////////NOTIFICATION ALERT FOR ANSWER OF QUESTION

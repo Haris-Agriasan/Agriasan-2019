@@ -1,0 +1,235 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">Agriasan</string>
+    <string name="activity">Activity</string>
+
+    <string name="open_camera">Open Camera</string>
+
+    <!--    NEW -->
+    <string name="ager_aap_pehlay_say_member_hain">اگرپہلے سے ممبرہیں</string>
+    <string name="tou_apna_no_darj_karen">تواپنا نمبر درج کریں</string>
+    <string name="phn_no">فون نمبر</string>
+    <string name="sign_in">سائن ان</string>
+    <string name="ager_aap_new_member_hain">اگر آپ  نئے ممبر  ہیں تو</string>
+    <string name="register_karen">رجسٹرکریں</string>
+    <string name="agri_cultural_expert_yaha">ایگری کلچرل ایکسپرٹ یہاں</string>
+    <string name="please_wait">مہربانی انتظار کریں!!!</string>
+    <string name="select_language">Click for English</string>
+    <string name="enter_correct_phn_no">پہلے درست نمبر درج کریں!</string>
+    <string name="welcome">خو ش آمدید </string>
+    <string name="register_yourself_first">مہربانی  پہلے خود کو رجسٹر کروایں!</string>
+    <string name="wait_for_domain_account_to_verify">ابھی آپکا اکاؤنٹ تصدیق نہی ہوا مہربانی انتظار کریں!</string>
+    <string name="thanks">شکریہ</string>
+    <string name="error_in_receiving_code">اگر آپکو کوڈ وصول نہ ہوتو کچھ دیرانتظار کریں اوراپنا موبائل ریسٹارٹ کریں</string>
+    <string name="phn_hint">03XX-XXXXXXX</string>
+
+    <string name="for_using_agri_asan">ایگری آسان کےاستمال کےلیے</string>
+    <string name="darj_zail_tafseel_pur_karen">درج زیل تفصیل  پر کریں</string>
+    <string name="name">نام</string>
+    <string name="your_name">آپکا نام</string>
+    <string name="city">شہر / ضلع</string>
+    <string name="your_city">آپکا شہر</string>
+    <string name="phone_no">فون نمبر</string>
+    <string name="id_card">شناختی کارڈ</string>
+    <string name="darj_karen">درج کریں</string>
+    <string name="enter_your_name_first">پہلے اپنانام لکھیں!</string>
+    <string name="enter_your_city_first">پہلے اپنا شہر لکھیں!</string>
+    <string name="enter_your_phn_first">پہلے اپنا فون نمبر لکھیں!</string>
+    <string name="phn_no_already_exist">یے نمبر پہلے سے رجسٹر ہے</string>
+
+    <string name="agricultrual_expert">ایگری کلچرل ایکسپرٹ</string>
+    <string name="yaha_register_karen">      یہاں رجسٹر کریں     </string>
+    <string name="shoba">شعبہ</string>
+    <string name="shoba_hint">آپکا شعبہ</string>
+    <string name="enter_your_shoba_first">پہلے اپنا شعبہ لکھیں!</string>
+
+    <string name="aapkay_mobile_pr_6_digit">آپکےموبائل پر 6 ہندسوں</string>
+    <string name="ka_code_bheja_gya_hai">کاکوڈبھیجاگیاہے</string>
+    <string name="wo_code_darj_karen">وہ کوڈنیچےدرج کریں</string>
+    <string name="code_nahi_mila_tou">60 سیکنڈ میں کوڈ نہیں ملا تو</string>
+    <string name="dobara">دوبارہ</string>
+
+    <string name="enter_correct_code">درست کوڈ درج کریں</string>
+    <string name="resending_code">دوبارہ کوڈ بھیجا جا رہا ہے !</string>
+    <string name="check_messages">اپنے میسجس چیک کریں</string>
+    <string name="wrong_code_or_network_fail">غلط کوڈ یا پھر نیٹ ورک فیل ہو گیا ہے</string>
+
+
+    <string name="apka_account_dusray_mobile_say_login_ho_gya_hai">آپکا اکاؤنٹ دوسرے موبائل سے لوگن ہو گیا ہے !</string>
+    <string name="no_internet">انٹرنٹ موجود نہی</string>
+    <string name="please_enable_your_internet">برائے مہربانی پہلے اپنا انٹرنٹ اون کریں یا پھر ایپ دوبارہ چلائں</string>
+    <string name="contact_us">ہم سے رابطہ کریں</string>
+    <string name="aapkay_pochay_gaye_sawalaat">آپکے پوچھے گئے سوالات</string>
+    <string name="press_back_again_to_exit">مہربانی پیچھے جانے کے لیے دبارہ بیک کا بٹن دابایں</string>
+
+    <string name="id_card_number">شناختی کارڈ نمبر</string>
+    <string name="logout_karen">لاگ آوٹ کریں</string>
+
+    <string name="matti">مٹی</string>
+    <string name="mehkama_inhaar">محکمہ انھار</string>
+    <string name="mehkama_tousee">محکمہ توسیع</string>
+    <string name="khaad">کھاد</string>
+    <string name="medicines">ادویات</string>
+    <string name="beej">بیج</string>
+    <string name="herb">جڑی بوٹیاں</string>
+    <string name="keeray">کیڑے</string>
+    <string name="tunnel_farming">ٹنل فارمنگ</string>
+    <string name="janwar">جانور</string>
+    <string name="sooraj_mukhi">سورج مکھی</string>
+    <string name="sabziyan">سبزیاں</string>
+    <string name="fish">مچھلی</string>
+    <string name="poultry">پولٹری</string>
+    <string name="daalen">دالیں</string>
+    <string name="ganna">گنا</string>
+    <string name="makai">مکئی</string>
+    <string name="chawal">چاول</string>
+    <string name="gandum">گندم</string>
+    <string name="kappas">کپاس</string>
+    <string name="sarson">سرسوں</string>
+
+
+    <!--    END OF NEW-->
+
+    <string name="title_home">ہوم</string>
+    <string name="title_subsidy">سبسڈی</string>
+    <string name="title_bazaar">بازار</string>
+    <string name="title_public_opinion">عوامی رائے</string>
+    <string name="title_activity_side_navigation">Side_navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <string name="asked_question_number">آپکا پوچھا گیا سوال نمبر</string>
+    <string name="ham_say_rabta_karen">ہم سے رابطہ کریں</string>
+    <string name="notifications">نوٹیفیکشن</string>
+    <string name="enter">درج کریں</string>
+    <string name="tasaveer_len">تصاویر لیں</string>
+    <string name="tasaveer">تصاویر</string>
+    <string name="tafseel">تفصیل</string>
+    <string name="fasal">فصل</string>
+    <string name="fasal_type">شعبہ</string>
+    <string name="naam"> نام </string>
+    <string name="qeemat">قیمت</string>
+    <string name="paimana">پیمانہ</string>
+    <string name="aapki_products">آپکی پروڈکٹس</string>
+    <string name="aapki_product_delete_ho_chuki_hai">آپکی پرا ڈکٹ ڈیلیٹ ہو چکی ہے</string>
+    <string name="mikdaar">مقدار</string>
+    <string name="kilo">کلو</string>
+    <string name="koi_nahin">کوئ نہیں</string>
+    <string name="nai_product_darj_karen">نئی پروڈکٹ</string>
+    <string name="product_ki_kism_muntakhib_karen">قسم منتخب کریں</string>
+
+    <string name="kism">قسم</string>
+    <string name="addtocart">ٹوکری میں ڈالیں</string>
+    <string name="buynow">ابھی خریدیں</string>
+    <string name="cart">آپکی ٹوکری</string>
+
+    <string name="buy">خریدیں</string>
+    <string name="total_price">کل قیمت</string>
+
+    <string name="address">پتہ</string>
+    <string name="delivery_address">ترسیل کا پتہ</string>
+
+    <string name="receiver_name">وصول کرنے والے کا نام</string>
+
+    <string name="phn_hint_2">03XXXXXXXXX</string>
+
+    <string name="your_cart_products">آپکی ٹوکری کی پروڈکٹس</string>
+
+    <string name="your_bill">آپکا بل</string>
+
+    <string name="cash_on_delivery">رقم کی ادائیگی اورڈر کی ترسیل پر ہو گی</string>
+
+
+    <string name="last_time_check">آخری بار چیک</string>
+    <string name="alert">انتباہ!</string>
+    <string name="order_received">آپکا اورڈر وصول کر لیا گیا ہے</string>
+    <string name="thankyou">شکریہ!</string>
+
+    <string name="your_orders">آپکے اورڈرز</string>
+    <string name="contact_no">آپکا رابطہ نمبر:</string>
+    <string name="pending">زیر غور</string>
+    <string name="receiver_info">وصول کرنے والے کی معلومات</string>
+    <string name="orders_to_deliver">ترصیل کرنے والی پروڈکٹس</string>
+
+    <string name="order_status">اورڈر کی صورتحال بتائیں؟</string>
+
+    <string name="seen">نے دیکھا</string>
+
+    <string name="sold">فروخت</string>
+
+
+    <string name="max_images_6">آپ کی 6 تصاویر ہو چکی ہیں اب شا مل کریں پر کلک کریں</string>
+    <string name="shamil_karen">شامل کریں</string>
+    <string name="no_image">ابھی تک آپنے کوئ تصویر منتخب نہی کی</string>0
+    <string name="camera_title">کیمرہ</string>
+    <string name="gallery_title">گیلری</string>
+
+
+    <string name="paimana_prompt">پیمانہ</string>
+    <string-array name="paimana_array">
+        <item>کوئ نہیں</item>
+        <item>کلو</item>
+        <item>لیٹر</item>
+    </string-array>
+
+    <string name="order_status_prompt">اورڈر کی صورتحال</string>
+    <string-array name="order_status_array">
+        <item>منسوخ</item>
+        <item>زیر غور</item>
+        <item>راستے میں</item>
+        <item>پہنچا دیا</item>
+    </string-array>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="strokeColor" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="highlightEnable" format="boolean" />
+        <attr name="highlightColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarImageView">
+        <attr name="avatarBackgroundColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="text" format="string" />
+        <attr name="view_state" format="enum">
+            <enum name="INITIAL" value="1" />
+            <enum name="IMAGE" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <string name="gallery">Gallery</string>
+    <string name="no_enough_permission">No enough permissions(CAMERA, RECORD_AUDIO, WRITE_EXTERNAL_STORAGE)</string>
+    <string name="recording">Recording</string>
+    <string name="record">Record</string>
+    <string name="shot">Shot</string>
+    <string name="cancel">Cancel</string>
+    <string name="image_mode">Image Mode</string>
+    <string name="video_mode">Video Mode</string>
+    <string name="finish">Finish</string>
+    <string name="flip">Flip</string>
+    <string name="play_file">Play[%s]</string>
+    <string name="done">Done</string>
+    <string name="fill">Fill</string>
+    <string name="zoom">Zoom</string>
+    <string name="video_size">Video size</string>
+    <string name="image_size">Image size</string>
+    <string name="ratio">Ratio</string>
+    <string name="flash_auto">Auto</string>
+    <string name="flash_on">On</string>
+    <string name="flash_off">Off</string>
+</resources>
+

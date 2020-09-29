@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.comix.rounded.RoundedCornerImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivGallery"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_gravity="center_horizontal"
+        app:cornerBottomDisable="false"
+        app:cornerLeftDisable="false"
+        app:cornerRightDisable="false"
+        app:cornerTopDisable="false"
+        app:cornerRadius="8dp"
+        android:padding="3dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="false"
+        android:src="@drawable/corn"
+        />
+
+    <ImageButton
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:id="@+id/btn_delete_image"
+        android:background="@drawable/transparent_background"
+        android:src="@drawable/delete_basket_red"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+    </ImageButton>
+
+</RelativeLayout>
+
+

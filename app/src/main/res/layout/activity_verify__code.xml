@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:background="@drawable/background_1_1"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:id="@+id/verify_code_layout"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        >
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="10"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+        <ImageView
+            android:src="@drawable/only_name_logo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+        </View>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+    </View>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        ></View>
+
+    <!--    Text after welcome-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <TextView
+            android:autoSizeStepGranularity="10sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6"
+            android:text="@string/aapkay_mobile_pr_6_digit"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textStyle=""
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+        <TextView
+            android:autoSizeStepGranularity="10sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.6"
+            android:text="@string/ka_code_bheja_gya_hai"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textStyle=""
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+        <TextView
+            android:autoSizeStepGranularity="10sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.6"
+            android:text="@string/wo_code_darj_karen"
+            android:textAlignment="center"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textStyle=""
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.7">
+
+        </View>
+
+    </LinearLayout>
+
+
+    <!--    text after welcome end-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        ></View>
+
+    <!--    Text view for phone Number-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1">
+
+        </View>
+
+        <!--        Right side text Phone Number-->
+        <com.alimuzaffar.lib.pin.PinEntryEditText
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/txt_pin_entry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.8"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:editable="true"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:inputType="number"
+            android:layoutDirection="ltr"
+            android:maxLength="6"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textIsSelectable="false"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="20sp"
+            app:pinAnimationType="popIn"
+            app:pinBackgroundDrawable="@drawable/background_verify_code"
+            app:pinBackgroundIsSquare="true"
+            app:pinCharacterSpacing="0dp"
+            app:pinLineColors="#FFCCCCCC"
+            app:pinLineStroke="0dp"
+            app:pinLineStrokeSelected="0dp"
+            android:padding="1dp"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1">
+
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+    </View>
+
+
+    <!--    Submit button / login button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+
+            <!--            ENTER BUTTON-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7.5">
+                </View>
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/enter"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/enter_icon"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/for_white_stroke"
+                />
+
+            <Button
+                android:textAllCaps="false"
+                android:layout_marginLeft="3dp"
+                android:id="@+id/code_submit_button"
+                android:layout_marginBottom="3dp"
+                android:text="@string/darj_karen"
+                android:autoSizeStepGranularity="10sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:autoSizeTextType="uniform"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/buttonshape_sign_in"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        >
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6"
+            android:text="@string/code_nahi_mila_tou"
+            android:textAlignment="center"
+            android:autoSizeStepGranularity="10sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            >
+        </TextView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7.6">
+
+            <!--            ENTER BUTTON-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:elevation="5dp"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.5">
+                </View>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/resend_code"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_icon"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/for_white_stroke"
+                />
+
+            <Button
+                android:layout_marginStart="3dp"
+                android:id="@+id/resend_code_button"
+                android:layout_marginBottom="3dp"
+                android:text="@string/dobara"
+                android:textColor="#FFFFFF"
+                android:autoSizeStepGranularity="10sp"
+                android:textAllCaps="false"
+                android:autoSizeTextType="uniform"
+                android:textStyle="bold"
+                android:textAlignment="center"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@drawable/buttonshape_member_register"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+
+        </View>
+
+    </LinearLayout>
+
+
+</LinearLayout>
